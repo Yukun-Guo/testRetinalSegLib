@@ -6,7 +6,7 @@
             "command": "bash",
             "args": [
                 "-c",
-                "/usr/bin/g++ -o3 -fno-verbose-asm -fdiagnostics-color=always -g testLib.cpp  -o testLib.o -I /usr/local/include/opencv4 -I /usr/local/include/onnxruntime -L /usr/local/lib/libopencv*  -L /usr/local/lib/libonnxruntime**  -L. -lRetinalSeg -Wl,-rpath=./ -lz"
+                "/usr/bin/g++ -o3 -fno-verbose-asm -fdiagnostics-color=always -g testLib.cpp  -o testLib.o -I /usr/local/include/opencv4 -I /usr/local/include/onnxruntime -L /usr/local/lib/libopencv*  -L /usr/local/lib/libonnxruntime**  -L. -lretinalseg -Wl,-rpath=./ -lz"
             ],
             "options": {
                 "cwd": "${fileDirname}"

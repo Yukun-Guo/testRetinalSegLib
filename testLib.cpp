@@ -13,7 +13,7 @@ int main(){
     std::cout << "load oct time: " << elapsed.count() << " s\n";
    
     start = std::chrono::high_resolution_clock::now();
-    auto session = loadNNModel("model.enc", 6,1); 
+    auto session = loadNNModel("model.enc", 6,0); 
     end = std::chrono::high_resolution_clock::now();
     elapsed = end - start;
     std::cout << "load model time: " << elapsed.count() << " s\n";

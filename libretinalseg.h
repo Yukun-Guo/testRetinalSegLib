@@ -1,4 +1,15 @@
-# include "RetinalLayerSegmentation.h"
+#include <iostream>
+#include <vector>
+#include <string>
+#include <opencv2/opencv.hpp>
+#include <onnxruntime_cxx_api.h>
+
+/**
+ * @brief read OCT file and return a vector of cv::Mat
+ * param: octpath: path to the oct file
+ * return: vector of cv::Mat
+*/
+std::vector<cv::Mat> readOCT(std::string);
 
 /**
  * @brief load NN model from modelpath and return a session object 
