@@ -19,6 +19,7 @@ std::vector<cv::Mat> readOCT(std::string);
  * return: Ort::Session object
 */
 Ort::Session loadNNModel(std::string modelpath, int threadnum=2, int gpuindex=0);
+
 /**
  * @brief read OCT file and return a vector of cv::Mat
  * param: octpath: path to the oct file
